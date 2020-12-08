@@ -34,6 +34,7 @@ class MapRepository @Inject constructor(resourceService: ResourceService){
             HUE_VIOLET, HUE_AZURE, HUE_ROSE, HUE_CYAN, HUE_MAGENTA)
         var index=0
 
+        //todo control if there are more zones than colours.
         wsList.forEach{
             if(hashMap.isEmpty() || !hashMap.containsKey(it.companyZoneId)){
                 hashMap.put(it.companyZoneId, listColors.get(index))
